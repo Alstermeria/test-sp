@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          assets/mobile_1x.png 300w,
+          assets/mobile_2x.png 560w,
+          assets/mobile_3x.png 720w
+        "
+      />
+      <source
+        media="(min-width: 768px) and (max-width: 1024px)"
+        srcset="
+          assets/tablet_1x.png  760w,
+          assets/tablet_2x.png  960w,
+          assets/tablet_3x.png 1020w
+        "
+      />
+      <source
+        media="(min-width: 1024px)"
+        srcset="
+          assets/desktop_1x.jpg 1024w,
+          assets/desktop_2x.jpg 1400w,
+          assets/desktop_3x.jpg 2048w
+        "
+      />
+      <!-- img tag for browsers that do not support picture element -->
+      <img src="assets/mobile_3x.png" alt="" />
+    </picture>
+  </body>
+</html>
