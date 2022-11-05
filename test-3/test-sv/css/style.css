@@ -385,7 +385,7 @@ img {
   justify-content: center;
   margin-top: 45px;
 }
-.review__click .hidden {
+.review__click.hidden {
   display: none;
 }
 .review__click button {
